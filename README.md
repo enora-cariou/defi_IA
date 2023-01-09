@@ -4,7 +4,6 @@ Le repository contient différents documents dont seuls Analysis.ipynb, train.py
 
 Les lignes suivantes sont utiles pour l'évaluation :
 
-- fichier train.py : après avoir téléchargé puis dézippé le repository, ouvrir un terminal dans ce dossier et exéctuer la commande suivante : 
 
 
 
