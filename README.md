@@ -2,7 +2,7 @@
 
 Le repository contient différents documents dont seuls Analysis.ipynb, train.py, app.py sont les livrables pour l'évulation du module. Les autres documents présents nous ont servi pour le défi et pour partager nos avancées.
 
-Les lignes suivantes sont utiles pour l'évaluation :
+Les lignes suivantes sont pour l'évaluation :
 
 
 
