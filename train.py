@@ -15,16 +15,17 @@ from category_encoders.target_encoder import TargetEncoder
 from sklearn.model_selection import train_test_split  
 from xgboost import XGBRegressor
 from sklearn.preprocessing import OneHotEncoder
+import os
 
 def training_model(model,encoder): #model = 'rf' ou 'xgb' et encoder = 'ohe' ou 'target'
-    file = '/home/enora/Documents/insa/IA/defi_IA-main/pricing_requests_tot.csv'
+    path = os.getcwd()
+    file = path+'/pricing_requests/pricing_requests_tot.csv'
 
     dataset = pd.DataFrame(pd.read_csv(file))
     dataset_brut = pd.DataFrame(pd.read_csv(file))
     del dataset['Unnamed: 0']
     del dataset_brut['Unnamed: 0']
-    
-    
+
     dict_city =  dataset.groupby('city')['price'].mean().to_dict()
     dict_brand = dataset.groupby('brand')['price'].mean().to_dict()
     #dict_group = dataset.groupby('group')['price'].mean().to_dict()
@@ -93,3 +94,5 @@ def training_model(model,encoder): #model = 'rf' ou 'xgb' et encoder = 'ohe' ou 
         print('modèle inconnu')
     
     return(mod)
+
+training_model('xgb','target')
