@@ -1,0 +1,13 @@
+pandas 
+numpy 
+matplotlib 
+eli5
+xarray 
+yellowbrick
+sklearn
+netCDF4
+category-encoders 
+xgboost 
+seaborn 
+gradio==3.16.1
+
