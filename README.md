@@ -7,6 +7,7 @@ Les livrables :
 - Analysis.ipynb : notebook contenant notre analysis de la base de données et des modèles
 - train.py : fichier python permettant l'entrainement du modèle
 - app.py : application gradio
+- Dockerfile (+ requirements.txt qui marche avec le Dockerfile)
 
 
 Dossier travail_continu :
@@ -22,8 +23,8 @@ EVALUATION :
 Commandes à exécuter pour faire tourner l'application avec une image docker : 
 - après avoir télécharger le repository git, ouvrir un terminal dans le dossier
 - exécuter : 
-$ sudo docker build -t image_app_hotel [répertoire où se situe le Dockerfile]
-$(ex : sudo docker build -t image_app_hotel ~/defi_IA-main/)
+$ sudo docker build -t image_app_hotel [répertoire où se situe le Dockerfile] \
+(ex : sudo docker build -t image_app_hotel ~/defi_IA-main/)\
 $ docker run -it --name cont_app_hotel imahe_app_hotel
 
 L'application va alors tourner et deux adresses URL vont s'afficher. Copier l'adresse HTTPS et coller la dans un navigateur. Vous pourrez alors tester l'application.
