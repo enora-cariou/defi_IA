@@ -23,7 +23,7 @@ Dossier travail_continu :
 Commandes à exécuter pour faire tourner l'application avec une image docker : 
 - après avoir télécharger le repository git, ouvrir un terminal dans le dossier
 #### exécuter :  
-- $ sudo docker build -t image_app_hotel [répertoire où se situe le Dockerfile]  (ex : sudo docker build -t image_app_hotel ~/defi_IA-main/)  
+- $ sudo docker build -t image_app_hotel [répertoire où se situe le Dockerfile]   
 - $ docker run -it --name cont_app_hotel imahe_app_hotel
 
 L'application va alors tourner et deux adresses URL vont s'afficher. Copier l'adresse HTTPS et coller la dans un navigateur. Vous pourrez alors tester l'application.
