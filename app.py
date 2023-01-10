@@ -20,7 +20,7 @@ import gradio as gr
 
 def training_model(model,encoder): #model = 'rf' ou 'xgb' et encoder = 'ohe' ou 'target'
     path = os.getcwd()
-    file = path+'/pricing_requests/pricing_requests_tot.csv'
+    file = path+'/travail_continu/pricing_requests/pricing_requests_tot.csv'
 
     dataset = pd.DataFrame(pd.read_csv(file))
     dataset_brut = pd.DataFrame(pd.read_csv(file))
@@ -104,7 +104,7 @@ def calcul_prix(city,date,stock,brand):
     #piscine = '1' if pool else '0'
     hotel_id = random.randint(0,998)
    
-    file2 = path2+'/pricing_requests/pricing_requests_tot.csv'
+    file2 = path2+'/travail_continu/pricing_requests/pricing_requests_tot.csv'
     dataset = pd.DataFrame(pd.read_csv(file2))
     dataset_brut = pd.DataFrame(pd.read_csv(file2))
     del dataset['Unnamed: 0']
@@ -152,5 +152,5 @@ demo = gr.Interface(
     inputs=[gr.Dropdown(list(ville), multiselect=False),"text","text",gr.Radio(list(brand))],
     outputs=["text"],
 )
-demo.launch()
+demo.launch(share=True)
 
