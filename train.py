@@ -18,8 +18,10 @@ from sklearn.preprocessing import OneHotEncoder
 import os
 
 def training_model(model,encoder): #model = 'rf' ou 'xgb' et encoder = 'ohe' ou 'target'
+    '''On peut choisir le modèle (xgboost ou random forest) ainsi que la façon d'encoder 'OneHotEncoder ou Target Encoding)'''
+    
     path = os.getcwd()
-    file = path+'/pricing_requests/pricing_requests_tot.csv'
+    file = path+'/pricing_requests_tot.csv'  #base de données complètes
 
     dataset = pd.DataFrame(pd.read_csv(file))
     dataset_brut = pd.DataFrame(pd.read_csv(file))
@@ -41,7 +43,7 @@ def training_model(model,encoder): #model = 'rf' ou 'xgb' et encoder = 'ohe' ou 
         dataset_targ['group']=encoder.fit_transform(dataset_targ['group'],dataset_targ['price'])
             
         X = dataset_targ.drop(labels='price',axis=1) 
-        del X['language']
+        del X['language'] #on retire les features dont l'importance est faible (cf le notebook Analysis)
         del X['parking']
         del X['avatar_id']
         del X['children_policy']
@@ -63,7 +65,7 @@ def training_model(model,encoder): #model = 'rf' ou 'xgb' et encoder = 'ohe' ou 
 
         one_hot_encoded_data = df_ohe.set_axis(list(colnames), axis=1)
         X = one_hot_encoded_data.drop(labels='price',axis=1)
-        del X['language']
+        del X['language']   #on retire les features dont l'importance est faible (cf le notebook Analysis)
         del X['parking']
         del X['avatar_id']
         del X['children_policy']
