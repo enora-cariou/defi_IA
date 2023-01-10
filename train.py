@@ -21,7 +21,7 @@ def training_model(model,encoder): #model = 'rf' ou 'xgb' et encoder = 'ohe' ou 
     '''On peut choisir le modèle (xgboost ou random forest) ainsi que la façon d'encoder 'OneHotEncoder ou Target Encoding)'''
     
     path = os.getcwd()
-    file = path+'/pricing_requests/pricing_requests_tot.csv'  #base de données complètes
+    file = path+'/travail_continu/pricing_requests/pricing_requests_tot.csv'  #base de données complètes
 
     dataset = pd.DataFrame(pd.read_csv(file))
     dataset_brut = pd.DataFrame(pd.read_csv(file))
