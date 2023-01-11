@@ -1,7 +1,7 @@
 # defi_IA
 
 Défi IA 2023 : 1001 Nights !
-Ce repository contient le travail de notre équipe (constituée d'Agathe Gentric, de Juliette Marionneau et d'Enora Cariou) sur le défi IA 2023. Les livrable pour l'évluation du module IA frameworks sont Analysis.ipynb, train.py et app.py. Le dossier travail_continu contient les différents fichiers développés tout au long du semestre mais à utiles pour l'évaluation. 
+Ce repository contient le travail de notre équipe (constituée d'Agathe Gentric, de Juliette Marionneau et d'Enora Cariou) sur le défi IA 2023. Les livrables pour l'évluation du module IA frameworks sont Analysis.ipynb, train.py, app.py et le Dockerfile. Le dossier travail_continu contient les différents fichiers développés tout au long du semestre mais pas utiles pour l'évaluation. 
 
 Les livrables :
 - Analysis.ipynb : notebook contenant notre analysis de la base de données et des modèles
@@ -17,6 +17,10 @@ Dossier travail_continu :
 - creation_base_donnees.ipynb : différentes requêtes faites pour construire notre base de données ;
 - analyse_hotels_features.ipynb : analyse des features
 
+### Démarche et résultats:
+On a distingué de façon de penser notre modèle : celle pour le score kaggle et celle pour obtenir une application aussi performante que possible. Ces démarches et les résultats obtenus sont expliqués en détail dans le notebook Analysis. Nous avons testé différentes manières d'encoder et différents modèles. Finalement nous avons choisi de travailler avec un modèle XGBoost et un encodage en target encoding. </br>
+
+Score kaggle : 35ème sur 76 équipes avec un score de 21.65450.
 
 ### EVALUATION :
 
