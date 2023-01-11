@@ -25,8 +25,9 @@ Commandes à exécuter pour faire tourner l'application avec une image docker :
 #### exécuter :  
 - $ sudo docker build -t image_app_hotel [répertoire où se situe le Dockerfile]   
 - $ docker run -it --name cont_app_hotel image_app_hotel 
+- $ python app.py
 
-L'application va alors tourner et deux adresses URL vont s'afficher. Copier l'adresse HTTPS et coller la dans un navigateur. Vous pourrez alors tester l'application.
+Deux adresses URL vont s'afficher. Copier l'URL public (deuxième lien) et coller le dans un navigateur. Vous pourrez alors tester l'application en choisissant la ville, la date, le stock et la marque.
 
 Si un problème se produit avec le docker, pour quand même tester l'application sans passer par docker : ouvrir un terminal dans le répertoire et exécuter
 $ python app.py
