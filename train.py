@@ -97,4 +97,5 @@ def training_model(model,encoder): #model = 'rf' ou 'xgb' et encoder = 'ohe' ou 
     
     return(mod)
 
-training_model('xgb','target')
+#training_model('xgb','target')
+
