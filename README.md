@@ -25,11 +25,10 @@ Score kaggle : 35ème sur 76 équipes avec un score de 21.65450.
 ### EVALUATION :
 
 Commandes à exécuter pour faire tourner l'application avec une image docker : 
-- après avoir télécharger le repository git, ouvrir un terminal dans le dossier
-#### exécuter :  
-- $ sudo docker build -t image_app_hotel [répertoire où se situe le Dockerfile]   
-- $ docker run -it --name cont_app_hotel image_app_hotel 
-- $ python app.py
+- après avoir téléchargé le repository git, ouvrir un terminal dans le dossier et exécuter : </br>
+$ sudo docker build -t image_app_hotel [répertoire où se situe le Dockerfile]   </br> 
+$ docker run -it --name cont_app_hotel image_app_hotel </br>
+$ python app.py </br>
 
 Deux adresses URL vont s'afficher (ça peut prendre quelques secondes avant de s'afficher). Copier l'URL public (deuxième lien) et coller le dans un navigateur. Vous pourrez alors tester l'application en choisissant la ville, la date, le stock et la marque. Le prix peut mettre environ 30secondes avant de s'afficher.
 
