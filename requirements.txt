@@ -9,5 +9,5 @@ netCDF4
 category-encoders 
 xgboost 
 seaborn 
-gradio==3.16.1
+gradio==3.12.0
 
